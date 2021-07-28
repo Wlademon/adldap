@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  php:
+    build:
+      context: ./containers/php
+      dockerfile: ./Dockerfile
+      args:
+        USER_ID: "$USER_ID"
+        GROUP_ID: "$GROUP_ID"
+        APP_ENV: "$APP_ENV"
+    container_name: ${PROJECT_PREFIX}_php
+    volumes:
+      - ./../:/var/www/html
+      - ./logs/php:/var/log/php
+      - ./data/sessions:/var/www/sessions
+    restart: unless-stopped
+    environment:
+      APP_ENV: ${APP_ENV}
+      PROJECT_PREFIX: "$PROJECT_PREFIX"
+    ports:
+      - "9000:9000"
+  ldap:
+    build:
+      context: ./containers/ldap
+      dockerfile: ./Dockerfile
+    container_name: ${PROJECT_PREFIX}_ldap
+    ports:
+      - "10389:10389"

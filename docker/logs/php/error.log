@@ -1,0 +1,197 @@
+[29-Mar-2021 18:09:25 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting function (T_FUNCTION) or const (T_CONST) in /var/www/html/app/configurators/AdLdapConfigurator.php on line 7
+[29-Mar-2021 18:10:06 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting function (T_FUNCTION) or const (T_CONST) in /var/www/html/app/configurators/AdLdapConfigurator.php on line 7
+[29-Mar-2021 18:10:21 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting function (T_FUNCTION) or const (T_CONST) in /var/www/html/app/configurators/AdLdapConfigurator.php on line 7
+[29-Mar-2021 18:10:42 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind('test', 'secret')
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adldap in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 18:11:10 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind('admin', 'secret')
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adlda in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 18:11:27 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind(NULL, NULL)
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adld in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 18:12:44 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind(NULL, NULL)
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adld in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 18:13:16 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind(NULL, NULL)
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adld in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 18:14:58 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind(NULL, NULL)
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adld in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 18:16:01 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind('admin', 'secret')
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adlda in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 18:19:58 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind('admin', 'secret')
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adlda in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 18:20:47 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind('admin', 'secret')
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adlda in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 18:21:20 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind(NULL, NULL)
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adld in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 19:53:24 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind('uid=admin,ou=sy...', 'secret')
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 19:53:42 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php(119): Adldap\Auth\Guard->bind('uid=admin,ou=sy...', 'secret')
+#1 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(256): Adldap\Auth\Guard->bindAsAdministrator()
+#2 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect(NULL, NULL)
+#3 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect()
+#4 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#5 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#7 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 19:56:27 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(259): Adldap\Auth\Guard->bind('uid=admin,ou=sy...', 'secret')
+#1 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect('uid=admin,ou=sy...', 'secret')
+#2 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect('first', 'uid=admin,ou=sy...', 'secret')
+#3 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#4 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#5 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 {main}
+
+Next Adldap\Auth\BindException: Can't contact LDAP server in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provide in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107
+[29-Mar-2021 19:58:02 Europe/Moscow] PHP Fatal error:  Uncaught Exception: Protocol error in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:102
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(259): Adldap\Auth\Guard->bind('uid=admin,ou=sy...', 'secret')
+#1 /var/www/html/vendor/adldap2/adldap2/src/Adldap.php(147): Adldap\Connections\Provider->connect('uid=admin,ou=sy...', 'secret')
+#2 /var/www/html/app/entities/ADLdap.php(29): Adldap\Adldap->connect('first', 'uid=admin,ou=sy...', 'secret')
+#3 /var/www/html/app/entities/ADLdap.php(23): entities\ADLdap->connect()
+#4 /var/www/html/app/services/ActiveDirectoryLdap.php(13): entities\ADLdap->__construct(Object(configurators\AdLdapConfigurator))
+#5 /var/www/html/root/index.php(7): services\ActiveDirectoryLdap->__construct(Object(configurators\AdLdapConfigurator))
+#6 {main}
+
+Next Adldap\Auth\BindException: Protocol error in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php:107
+Stack trace:
+#0 /var/www/html/vendor/adldap2/adldap2/src/Connections/Provider.php(259): Adldap\Aut in /var/www/html/vendor/adldap2/adldap2/src/Auth/Guard.php on line 107

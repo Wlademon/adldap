@@ -1,0 +1,7 @@
+{
+    "require": {
+        "adldap2/adldap2": "^10.3",
+        "symfony/dotenv": "^5.2",
+        "ext-ldap": "*"
+    }
+}
